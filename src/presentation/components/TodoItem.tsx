@@ -5,11 +5,12 @@ import { Todo } from "../../core/entities/Todo";
 interface TodoItemProps {
   todo: Todo;
   removeTodo: (id: string) => void;
+  updateTodo: (id: string, title: string) => void;
   toggleTodo: (id: string) => void;
   key: string;
 }
 
-export const TodoItem: React.FC<TodoItemProps> = ({ key, todo, removeTodo, toggleTodo }) => {
+export const TodoItem: React.FC<TodoItemProps> = ({ key, todo, removeTodo, toggleTodo , updateTodo}) => {
   return (
     <>
 
@@ -25,7 +26,7 @@ export const TodoItem: React.FC<TodoItemProps> = ({ key, todo, removeTodo, toggl
              {todo.title}
           </td>
           <td>
-            <button className="update" onClick={() => removeTodo(todo.id)}>Update</button>
+            <button className="update" onClick={() => updateTodo(todo.id, todo.title)}>Update</button>
             <button className="delete" onClick={() => removeTodo(todo.id)}>Delete</button>
           </td>
         </tr>

@@ -15,7 +15,7 @@ export const TodoRepository = () => {
   const getAll = () => todos;
 
   const add = (todo: Todo) => {
-    setTodos([...todos, todo]);
+    setTodos([todo, ...todos]);
   };
 
   const remove = (id: string) => {
@@ -44,5 +44,4 @@ export const TodoRepository = () => {
     toggle,
     update,
   };
-  ("");
 };
