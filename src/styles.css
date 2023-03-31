@@ -1,0 +1,153 @@
+body {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button.update {
+  background-color: #4477FF; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+button.update:hover {
+  background-color: #1E4ECF;
+}
+
+button.delete {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+button.delete:hover {
+  background-color: #c82333;
+}
+
+
+table {
+  flex: 1;
+  width: 100%;
+  border-collapse: collapse;
+
+  min-width: 600px;
+  
+}
+
+table thead th {
+  flex: 1;
+  background-color: #B3B3B3;
+  padding: 0.8rem;
+  text-align: left;
+  color: #F7F7F7;
+  font-size: 1rem;
+  line-height: 1.6;
+  
+}
+
+table thead th:first-child {
+    border-top-left-radius: 8px;
+}
+
+table thead th:last-child {
+    border-top-right-radius: 8px;
+    padding-left: 1.5rem;
+}
+
+table tbody tr {
+
+  border-top: 4px solid #F3F3F3;
+}
+
+
+table tr td {
+
+  background-color: #D9D9D9;
+  
+  padding: 1rem;
+
+  font-size: 1rem;
+  
+  line-height: 1.6;
+  
+}
+
+table td:nth-child(2) {
+  width: 60%;
+}
+
+table td:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
